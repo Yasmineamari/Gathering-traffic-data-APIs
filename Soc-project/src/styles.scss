@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'node_modules/ngx-sharebuttons/themes/default';
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.glide__arrow {
+  color: #fccc04 !important;
+  border-color: #fccc04 !important;
+  border-radius: 50% !important;
+}
+
+.glide__arrow--right {
+  position: absolute !important;
+  right: -10% !important;
+}
+
+.glide__arrow--left {
+  position: absolute !important;
+  left: -10% !important;
+}
+
+.glide__arrow:hover {
+  color: #fff !important;
+  background: #f5de86 !important;
+  transition: all 0.1s ease-in !important;
+}
+
+.glide__bullets {
+  position: absolute !important;
+  bottom: -8% !important;
+}
+
+.glide__bullet {
+  width: 1rem !important;
+  height: 1rem !important;
+}
+
+.glide__bullet--active {
+  background-color: #fccc04 !important;
+}
+
+.dowok-preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 9999;
+  opacity: .9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fccc04;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}

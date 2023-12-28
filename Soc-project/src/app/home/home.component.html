@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <title>Traffic Notification</title>
+
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <app-header></app-header>
+
+  <section class="fullwidth-block area-padding-bottom" style="margin-top: 5rem">
+    <div class="container-fluid">
+      <div class="row">
+        <div *ngFor="let a of accidents" class="col-md-5 col-lg-6 col-xl-5">
+          <div class="single-blog">
+            <div class="thumb">
+              <img class="img-fluid" src="#" alt="" />
+            </div>
+            <div class=" short_details">
+              <div class="meta-top d-flex">
+                <a href="#">Breaking News</a>
+              </div>
+              <a class="d-block" href="/article/{{ a._id }}">
+                <h4>{{ a.Title }}</h4>
+              </a>
+              <div class="meta-bottom d-flex">
+                <a href="#"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="first_block">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-xl-6">
+          <div class="single-blog row no-gutters style-four border_one">
+            <div class="col-12 col-sm-5">
+              <div class="thumb">
+                <img class="img-fluid" src="../../assets/images/Google-Maps-traffic-alerts.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-12 col-sm-7">
+              <div class="short_details">
+                <div class="meta-top d-flex">
+                  <a href="#">Breaking News</a>
+                </div>
+                <a class="d-block" href="single-blog.html">
+                  <h4>
+                    Welcome to Our Platform for Safer Transportation!
+                  </h4>
+                </a>
+                <div class="meta-bottom d-flex">
+                  <a href="#">March 12 , 2019 . </a>
+                  <a class="dark_font" href="#">By Alen Mark</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-xl-3">
+          <div class="single-blog style_five">
+            <div class="thumb">
+              <img class="img-fluid" src="../../assets/images/gps-navigation-design_24877-38785.jpg" alt="" />
+            </div>
+            <div class="short_details">
+              <div class="meta-top d-flex">
+                <a href="#">Breaking News</a>
+              </div>
+              <a class="d-block" href="single-blog.html">
+                <h4> reducing risks and enhancing your safety during travel.</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-xl-3">
+          <div class="single-blog style_five">
+            <div class="thumb">
+              <img class="img-fluid" src="../../assets/images/taxi-service-app-concept_23-2148472065.jpg" alt="" />
+            </div>
+            <div class="short_details">
+              <div class="meta-top d-flex">
+                <a href="#">Breaking News</a>
+              </div>
+              <a class="d-block" href="single-blog.html">
+                <h4>Notify people for any risk!</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================ First block section end =================-->
+
+  <!--================ Editors Picks section start =================-->
+
+  <section class="editors_pick area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="area-heading">
+          <h3>Editor Picks</h3>
+          <p>
+            Our Plus: We are dedicated to minimizing the risks of accidents and
+            ensuring your well-being on the road
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 col-xl-6">
+          <div class="single-blog">
+            <div class="thumb">
+              <img class="img-fluid" src="../../assets/images/r2.jpg" alt="" />
+            </div>
+            <div class="short_details pad_25">
+              <div class="meta-top d-flex">
+                <a href="#">Tours & Travel</a>
+              </div>
+              <a class="d-block" href="single-blog.html">
+                <h4>Created face stars sixth forth Earth firmament</h4>
+              </a>
+              <div class="meta-bottom d-flex">
+                <a href="#">March 12 , 2019 . </a>
+                <a class="dark_font" href="#">By Alen Mark</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-xl-6">
+          <div class="single-blog row no-gutters style-four m_b_30">
+            <div class="col-12 col-sm-7">
+              <div class="short_details padd_left_0">
+                <div class="meta-top d-flex">
+                  <a href="#">Tours & Travel</a>
+                </div>
+                <a class="d-block" href="single-blog.html">
+                  <h4 class="font-20">
+                    Experience peace of mind with our platform – your partner in making transportation safer
+                  </h4>
+                </a>
+                <p>
+                  Experience peace of mind with our platform – your partner in making transportation safer
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-5">
+              <div class="thumb">
+                <img class="img-fluid" src="../../assets/images/r1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="single-blog row no-gutters style-four">
+            <div class="col-12 col-sm-5">
+              <div class="thumb">
+                <img class="img-fluid" src="../../assets/images/vector-gps-background-design-eps.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-12 col-sm-7">
+              <div class="short_details padd_right_0">
+                <div class="meta-top d-flex">
+                  <a href="#">Tours & Travel</a>
+                </div>
+                <a class="d-block" href="single-blog.html">
+                  <h4 class="font-20">
+                    Light that hath itself god grass herb dark sea on the hath
+                    dowe
+                  </h4>
+                </a>
+                <p>
+                  Said spirit evening above good twes at god midst deep a
+                  wherein very made he seas male very broug sad forth saying
+                  right.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="addvertise">
+            <a href=""><img src="img/banner/add.jpg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================ three-block section start =================-->
+
+  <div class="three-block area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="area-heading">
+          <h3>Fashion News</h3>
+          <p>
+            Abundantly creeping saw forth spirit can made appear fourth us.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="single-blog style-five">
+            <div class="thumb">
+              <img class="img-fluid" src="img/magazine/15.jpg" alt="" />
+            </div>
+            <div class="short_details">
+              <div class="meta-top d-flex">
+                <a href="#">shoes</a>/
+                <a href="#">March 15, 2019</a>
+              </div>
+              <a class="d-block" href="single-blog.html">
+                <h4>Shall for rule whose toge one may heaven to dat</h4>
+              </a>
+              <div class="meta-bottom d-flex">
+                <a href="#"><i class="ti-comment"></i>05 comment</a>
+                <a href="#"><i class="ti-heart"></i> 0 like</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="single-blog style-five">
+            <div class="thumb">
+              <img class="img-fluid" src="img/magazine/16.jpg" alt="" />
+            </div>
+            <div class="short_details">
+              <div class="meta-top d-flex">
+                <a href="#">shoes</a>/
+                <a href="#">March 15, 2019</a>
+              </div>
+              <a class="d-block" href="single-blog.html">
+                <h4>Shall for rule whose toge one may heaven to dat</h4>
+              </a>
+              <div class="meta-bottom d-flex">
+                <a href="#"><i class="ti-comment"></i>05 comment</a>
+                <a href="#"><i class="ti-heart"></i> 0 like</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="single-blog style-five">
+            <div class="thumb">
+              <img class="img-fluid" src="img/magazine/17.jpg" alt="" />
+            </div>
+            <div class="short_details">
+              <div class="meta-top d-flex">
+                <a href="#">shoes</a>/
+                <a href="#">March 15, 2019</a>
+              </div>
+              <a class="d-block" href="single-blog.html">
+                <h4>Shall for rule whose toge one may heaven to dat</h4>
+              </a>
+              <div class="meta-bottom d-flex">
+                <a href="#"><i class="ti-comment"></i>05 comment</a>
+                <a href="#"><i class="ti-heart"></i> 0 like</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--================ three-block section end =================-->
+
+  <!--================ Latest news section start =================-->
+
+  <div class="latest-news area-padding-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="area-heading">
+          <h3>Fashion News</h3>
+          <p>
+            Abundantly creeping saw forth spirit can made appear fourth us.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="single-blog style-five">
+            <div class="thumb">
+              <img class="img-fluid" src="img/magazine/18.jpg" alt="" />
+            </div>
+            <div class="short_details">
+              <div class="meta-top d-flex">
+                <a href="#">shoes</a>/
+                <a href="#">March 15, 2019</a>
+              </div>
+              <a class="d-block" href="single-blog.html">
+                <h4>Brought dreepeth youll blessed from whose signs over</h4>
+              </a>
+              <div class="meta-bottom d-flex">
+                <a href="#"><i class="ti-comment"></i>05 comment</a>
+                <a href="#"><i class="ti-heart"></i> 0 like</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="single-blog style-five small">
+                <div class="thumb">
+                  <img class="img-fluid" src="img/magazine/19.jpg" alt="" />
+                </div>
+                <div class="short_details">
+                  <div class="meta-top d-flex">
+                    <a href="#">shoes</a>/
+                    <a href="#">March 15, 2019</a>
+                  </div>
+                  <a class="d-block" href="single-blog.html">
+                    <h4>Shall for rule whoses may heaven to</h4>
+                  </a>
+                  <div class="meta-bottom d-flex">
+                    <a href="#">March 15, 2019</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="single-blog style-five small">
+                <div class="thumb">
+                  <img class="img-fluid" src="img/magazine/20.jpg" alt="" />
+                </div>
+                <div class="short_details">
+                  <div class="meta-top d-flex">
+                    <a href="#">shoes</a>/
+                    <a href="#">March 15, 2019</a>
+                  </div>
+                  <a class="d-block" href="single-blog.html">
+                    <h4>Shall for rule whoses may heaven to</h4>
+                  </a>
+                  <div class="meta-bottom d-flex">
+                    <a href="#">March 15, 2019</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="single-blog style-five small">
+                <div class="thumb">
+                  <img class="img-fluid" src="img/magazine/21.jpg" alt="" />
+                </div>
+                <div class="short_details">
+                  <div class="meta-top d-flex">
+                    <a href="#">shoes</a>/
+                    <a href="#">March 15, 2019</a>
+                  </div>
+                  <a class="d-block" href="single-blog.html">
+                    <h4>Shall for rule whoses may heaven to</h4>
+                  </a>
+                  <div class="meta-bottom d-flex">
+                    <a href="#">March 15, 2019</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="single-blog style-five small">
+                <div class="thumb">
+                  <img class="img-fluid" src="img/magazine/22.jpg" alt="" />
+                </div>
+                <div class="short_details">
+                  <div class="meta-top d-flex">
+                    <a href="#">shoes</a>/
+                    <a href="#">March 15, 2019</a>
+                  </div>
+                  <a class="d-block" href="single-blog.html">
+                    <h4>Shall for rule whoses may heaven to</h4>
+                  </a>
+                  <div class="meta-bottom d-flex">
+                    <a href="#">March 15, 2019</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--================ Latest news section end =================-->
+  <app-footer></app-footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="../../assets/js/home_js/jquery-2.2.4.min.js"></script>
+  <script src="../../assets/js/home_js/popper.js"></script>
+  <script src="../../assets/js/home_js/bootstrap.min.js"></script>
+  <script src="../../assets/js/home_js/stellar.js"></script>
+  <script src="../../assets/js/home_js/jquery.magnific-popup.min.js"></script>
+  <script src="../../assets/js/home_js/jquery.ajaxchimp.min.js"></script>
+  <script src="../../assets/js/home_js/waypoints.min.js"></script>
+  <script src="../../assets/js/home_js/mail-script.js"></script>
+  <script src="../../assets/js/home_js/contact.js"></script>
+  <script src="../../assets/js/home_js/jquery.form.js"></script>
+  <script src="../../assets/js/home_js/jquery.validate.min.js"></script>
+  <script src="../../assets/js/home_js/mail-script.js"></script>
+  <script src="../../assets/js/home_js/theme.js"></script>
+</body>
+
+</html>

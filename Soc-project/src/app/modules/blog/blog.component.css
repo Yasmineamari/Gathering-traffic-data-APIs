@@ -1,0 +1,52 @@
+.example-card {
+    max-width: 250px;
+    margin-bottom: 8px;
+    background-color: #a0a599;
+    /*position: center;
+    align-items: center;
+    justify-content: center;*/
+}
+
+
+/*.back {
+    background-image: url('../../../assets/images/output-onlineimagetools.png');
+    background-size: cover;
+}*/
+
+button {
+    margin-right: 8px;
+}
+
+/*.container-text-center {
+   /* margin-left: 40%;
+}
+*/
+#intro {
+    /* Margin to fix overlapping fixed navbar */
+    margin-top: 58px;
+}
+
+@media (max-width: 991px) {
+    #intro {
+        /* Margin to fix overlapping fixed navbar */
+        margin-top: 45px;
+    }
+}
+
+.page-link {
+    color: #ffffff;
+    background-color: #a8c08b;
+    color-scheme: #a8c08b;
+}
+
+.page-item .sr-only {
+    color: #ffffff;
+    background-color: #a8c08b;
+    color-scheme: #a8c08b;
+}
+
+.sr-only {
+    color: #ffffff;
+    background-color: #a8c08b;
+    color-scheme: #a8c08b;
+}

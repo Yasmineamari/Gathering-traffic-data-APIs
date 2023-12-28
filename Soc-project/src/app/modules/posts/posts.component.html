@@ -1,0 +1,142 @@
+<div class="center">
+    <form class="was-validated" formGroup="ArticleForm" (ngSubmit)="addArticle(article)">
+        <div class="mb-5">
+            <div>
+                <h1>
+                    <div style="margin-top: 30px;">
+                        <i>Déposer votre article</i>
+                    </div>
+                    <mat-divider></mat-divider>
+                </h1>
+
+            </div>
+            <!--title-->
+            <label for="validationText" class="form-label">Title</label> <br>
+            <input class="form-control" id="validationText" placeholder="Title" (ngModel)="article.Title" matInput
+                required>
+            <div class="invalid-feedback">
+                <!--undertitle-->
+            </div>
+            <label for="validationText" class="form-label">Under-Title</label> <br>
+            <input class="form-control" id="validationText" placeholder="Under-Title" required> <br>
+            <div class=" invalid-feedback">
+            </div>
+            <!--description-->
+            <label for="validationTextarea" class="form-label">Description </label> <br>
+            <textarea class="form-control" id="validationTextarea" (ngModel)="article.Description"
+                placeholder="Description" matInput required></textarea>
+            <div class="invalid-feedback">
+
+            </div>
+            <!---Tags-->
+            <label for="validationTextarea" class="form-label">Tag-Name</label> <br>
+            <textarea class="form-control" id="validationTextarea" placeholder="Tags" required></textarea>
+            <div class="invalid-feedback">
+            </div>
+        </div>
+        <!---categories-->
+        <select class="form-select form-select-lg mb-3" class="btn btn-primary" style="margin-bottom:10px;"
+            aria-label=".form-select-lg example">
+            <option selected>select Category</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <div class="invalid-feedback">Example invalid select feedback</div>
+        </select>
+        <!--privacy -->
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck2">Public</label>
+        </div>
+
+        <div class="form-check mb-3">
+            <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck3">Private</label>
+            <div class="invalid-feedback"></div>
+        </div>
+        <!---Date-->
+        <label for="start">Start date:</label>
+        <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+        <!----photo-->
+        <div class="mb-3">
+            <input type="file" class="form-control" aria-label="file example" required>
+            <div class="invalid-feedback"></div>
+        </div>
+
+        <div class="mb-3">
+            <div><button class="btn btn-primary" mat-raised-button (click)="addArticle(article)" type="submit"><a
+                        [routerLink]="['/default/blog']" data-abc="true"></a>Post</button>
+            </div>
+
+            <div>
+                <button class="btn btn-primary" onclick="swal.fire()" type="submit"
+                    style="margin-top:15px;">Reset</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+
+<!--<mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker">
+                <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <form [formGroup]="options">
+            <mat-form-field appearance="fill">
+                <mat-label>Title</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Subtitle</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Select Category </mat-label>
+                <mat-select>
+                    <mat-option value="one">First Category</mat-option>
+                    <mat-option value="two">Second Category</mat-option>
+                    <mat-option value="two">third Category</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Textarea</mat-label>
+                <textarea matInput></textarea>
+            </mat-form-field>
+            <div class="example-container">
+
+                <mat-checkbox [formControl]="hideRequiredControl">Hide required marker</mat-checkbox>
+                <div>
+                    <label>Float label: </label>
+                    <mat-radio-group [formControl]="floatLabelControl">
+                        <mat-radio-button value="auto">Auto</mat-radio-button>
+                        <mat-radio-button value="always">Always</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+
+                <mat-form-field appearance="fill" [hideRequiredMarker]="hideRequiredControl.value"
+                    [floatLabel]="getFloatLabelValue()">
+                    <input matInput placeholder="Simple placeholder" required>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" [floatLabel]="getFloatLabelValue()">
+                    <mat-label>Both a label and a placeholder</mat-label>
+                    <input matInput placeholder="Simple placeholder">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" [hideRequiredMarker]="hideRequiredControl.value"
+                    [floatLabel]="getFloatLabelValue()">
+                    <mat-select required>
+                        <mat-option>-- None --</mat-option>
+                        <mat-option value="option">Option</mat-option>
+                    </mat-select>
+                    <mat-label>
+                        <mat-icon>favorite</mat-icon> <b> Fancy</b> <i> label</i>
+                    </mat-label>
+                </mat-form-field>
+            </div>--->

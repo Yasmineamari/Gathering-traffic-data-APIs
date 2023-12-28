@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-20 justify-content-center">
+            <div class=" wrap d-lg-flex" style="margin-bottom: 200px;">
+
+                <div class="col" style="color: #555e5d ; margin-left:20px;">
+                    <h1>Description</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sit dignissimos magni neque
+                        tenetur consequuntur architecto, harum consectetur numquam libero cumque iste eos, deleniti
+                        officiis error quaerat nemo porro repellat!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsam nisi, animi at, iure
+                        magni consequatur porro nihil numquam voluptatem vel molestias laborum incidunt quia fugiat.
+                        Possimus assumenda dolorum nesciunt.
+                    </p>
+                    <div class="col-1-row-1 justify-content-center" style="text-align: center;">
+                        <mat-card>Price <br>
+                            169,98 $US <br>
+
+                        </mat-card>
+                    </div>
+                    <div class="lg" style="margin-top:5%">
+                        <form class="example-container">
+                            <!---[style.fontSize.px]="getFontSize()"-->
+                            <mat-form-field>
+                                <mat-label>Format</mat-label>
+                                <mat-select>
+                                    <mat-option value="primary">Portrait</mat-option>
+                                    <mat-option value="accent">Paysage</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <br>
+                            <mat-divider></mat-divider>
+
+                            <mat-form-field>
+                                <mat-label>Quantity</mat-label>
+                                <input matInput type="number" placeholder="Number of copies" min="1" max="50">
+
+                                <span matSuffix>Copy</span>
+                            </mat-form-field>
+                        </form>
+                        <div class="d-grid gap-2 col-6 mx-auto" style="margin-bottom: 20px;">
+                            <button mat-button class="btn btn-outline-secondary btn-lg" type="submit"
+                                [routerLink]="['/order-page']">
+                                Pass to Order !
+                            </button>
+                        </div>
+
+                        <mat-divider></mat-divider>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="../../assets/images/FOR ME 6.png" class="img-thumbnail" alt="Magazine For Me">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
